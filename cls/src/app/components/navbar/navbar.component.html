@@ -1,0 +1,47 @@
+    <nav class="navbar" *ngIf="nav.visible">
+      <div class="container">
+        <a class="navbar-brand" href="http://mono.flatheme.net/">
+          <h5>CLS</h5>
+        </a>
+        <ul class="nav">
+          <!-- dropdown link 1 -->
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link" routerLink="home">Home</a>
+          </li>
+
+          <!-- dropdown link 2 -->
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link" routerLink="ourteam">Out Team</a>
+          </li>
+          <!-- dropdown link 3 -->
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link" routerLink="aboutus">About Us </a>
+          </li>
+          <!-- dropdown link 4 -->
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link" routerLink="contactus">Contact Us</a>
+          </li>
+          <!-- dropdown link 5 -->
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link" routerLink="shop">Shop</a>
+          </li>
+          <!-- dropdown link 6 -->
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link" routerLink="Features">Features</a>
+          </li>
+          <!-- Mega Dropdown Menu -->
+          <li class="nav-item nav-megadropdown">
+            <a class="nav-link" routerLink="elements">Elements</a>
+          </li>
+        </ul><!-- end nav -->
+        <ul class="list-horizontal-unstyled position-center position-lg-right">
+          <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+          <li><a href="#"><i class="fas fa-heart"></i></a></li>
+          <li><a class="search-toggle" href="#"><i class="fas fa-search"></i></a></li>
+        </ul>
+        <!-- Nav Toggle button -->
+        <button class="nav-toggle-btn">
+                <span class="lines"></span>
+            </button>
+      </div><!-- end container -->
+    </nav>
