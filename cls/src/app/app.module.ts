@@ -13,17 +13,8 @@ import { ErrorComponent } from './components/error/error.component';
 import { NavbarService } from './services/navbar.service';
 import { FooterService } from './services/footer.service';
 import { TestComponent } from './test/test.component';
+import {routes} from './app-routing.module';
 
-
-const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'contactus', component: ContactusComponent },
-  { path: 'aboutus', component: AboutusComponent },
-  { path: 'not-found', component: ErrorComponent },
-  { path: '**', redirectTo: 'not-found' }
-
-];
 
 @NgModule({
   declarations: [
@@ -38,7 +29,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(routes)
   ],
   providers: [NavbarService, FooterService],
   bootstrap: [AppComponent]
