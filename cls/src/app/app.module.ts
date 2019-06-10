@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Routes } from '@angular/router';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -12,9 +11,7 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { ErrorComponent } from './components/error/error.component';
 import { NavbarService } from './services/navbar.service';
 import { FooterService } from './services/footer.service';
-import { TestComponent } from './test/test.component';
 import {routes} from './app-routing.module';
-import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 
 @NgModule({
@@ -25,8 +22,7 @@ import {HashLocationStrategy, LocationStrategy} from '@angular/common';
     NavbarComponent,
     ContactusComponent,
     AboutusComponent,
-    ErrorComponent,
-    TestComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
