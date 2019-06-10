@@ -12,6 +12,7 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { ErrorComponent } from './components/error/error.component';
 import { NavbarService } from './services/navbar.service';
 import { FooterService } from './services/footer.service';
+import { TestComponent } from './test/test.component';
 
 
 const appRoutes: Routes = [
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
     ContactusComponent,
     AboutusComponent,
     ErrorComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
