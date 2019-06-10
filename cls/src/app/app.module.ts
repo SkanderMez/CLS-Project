@@ -14,6 +14,7 @@ import { NavbarService } from './services/navbar.service';
 import { FooterService } from './services/footer.service';
 import { TestComponent } from './test/test.component';
 import {routes} from './app-routing.module';
+import {HashLocationStrategy, LocationStrategy, PathLocationStrategy} from '@angular/common';
 
 
 @NgModule({
@@ -31,7 +32,9 @@ import {routes} from './app-routing.module';
     BrowserModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [NavbarService, FooterService],
+  providers: [NavbarService, FooterService,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
