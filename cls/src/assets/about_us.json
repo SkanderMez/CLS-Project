@@ -1,14 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+{
+"team" : [
 
-@Component({
-  selector: 'app-aboutus',
-  templateUrl: './aboutus.component.html',
-  styleUrls: ['./aboutus.component.css']
-})
-export class AboutusComponent implements OnInit {
-
-  team =
-    [
       {
         "nom" : 'Ridha Gharbi',
         "Poste" : 'BOSS',
@@ -17,15 +9,6 @@ export class AboutusComponent implements OnInit {
         "twitter" : '#',
         'linkedin' : '#'
       },
-      {
-        "nom" : 'Neyla Karoui',
-        "Poste" : 'Consultant',
-        "URL" : '9.jpg',
-        "fb" : 'https://web.facebook.com/profile.php?id=100011098754342' ,
-        "twitter" : '#',
-        'linkedin' : 'https://tn.linkedin.com/in/maher-dous-943b0a48'
-      },
-
       {
         "nom" : 'Hamza Daoues',
         "Poste" : 'developer',
@@ -69,26 +52,11 @@ export class AboutusComponent implements OnInit {
       },
       {
         "nom" : 'Slim Sellami',
-        "Poste" : 'IT manager and external communication',
+        "Poste" : 'developer',
         "URL" : '7.jpg',
         "fb" : 'https://web.facebook.com/slim.sellami.3' ,
         "twitter" : '#',
         'linkedin' : '#'
-      },
-      {
-        "nom" : 'Maher Dous',
-        "Poste" : 'Consultant',
-        "URL" : '8.jpg',
-        "fb" : 'https://web.facebook.com/dous.maher' ,
-        "twitter" : '#',
-        'linkedin' : 'https://tn.linkedin.com/in/maher-dous-943b0a48'
       }
-    ];
-
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+    ]
 }
