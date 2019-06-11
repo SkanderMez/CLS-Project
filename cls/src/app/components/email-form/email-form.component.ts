@@ -26,7 +26,7 @@ export class EmailFormComponent implements OnInit {
 
   submitMail() {
     console.log(this.emailForm.value);
-    this.hhtp.post('https://script.google.com/macros/s/AKfycbzz6JjJGIPsk8wdFP1naujz8714pj0NRNdWx63a8GmsScL8ex11/exec', this.emailForm.value)
+    this.hhtp.post('https://script.google.com/macros/s/AKfycbxgaDQF1kJh5hDOIJhbdqgkN26fiBjdyxT3Z314/exec', this.emailForm.value)
       .subscribe(d => console.log(d));
   }
 
