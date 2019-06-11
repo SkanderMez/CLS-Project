@@ -24,14 +24,16 @@
                             <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <h6 class="heading-uppercase">Contact Info</h6>
-                        <ul class="list-unstyled">
-                            <li>{{contact.address1}}</li>
-                            <li>{{contact.address2}}</li>
-                            <li>{{contact.email}}</li>
-                            <li>{{contact.phone}}</li>
-                        </ul>
+                    <div class="col-12 col-md-6 col-lg-4" >
+                        <ng-container *ngIf="contact">
+                          <h6 class="heading-uppercase">Contact Info</h6>
+                          <ul class="list-unstyled">
+                              <li>{{contact.address1}}</li>
+                              <li>{{contact.address2}}</li>
+                              <li>{{contact.email}}</li>
+                              <li>{{contact.phone}}</li>
+                          </ul>
+                        </ng-container>
                     </div>
                 </div><!-- end row(1) -->
 

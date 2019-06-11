@@ -67,22 +67,24 @@
 <!-- end Clients section -->
 
 <!-- Contact section -->
-<div class="section">
+<div class="section" >
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-4">
-        <div class="margin-bottom-30">
-          <h6 class="font-weight-normal no-margin">Phone:</h6>
-          <p>{{contact.phone}}</p>
-        </div>
-        <div class="margin-bottom-30">
-          <h6 class="font-weight-normal no-margin">Email:</h6>
-          <p>{{contact.email}}</p>
-        </div>
-        <div>
-          <h6 class="font-weight-normal no-margin">Address:</h6>
-          <p>{{contact.address1}} {{contact.address2}}</p>
-        </div>
+        <ng-container *ngIf="contact">
+          <div class="margin-bottom-30">
+            <h6 class="font-weight-normal no-margin">Phone:</h6>
+            <p>{{contact.phone}}</p>
+          </div>
+          <div class="margin-bottom-30">
+            <h6 class="font-weight-normal no-margin">Email:</h6>
+            <p>{{contact.email}}</p>
+          </div>
+          <div>
+            <h6 class="font-weight-normal no-margin">Address:</h6>
+            <p>{{contact.address1}} {{contact.address2}}</p>
+          </div>
+        </ng-container>
       </div>
       <div class="col-12 col-md-8">
         <app-email-form></app-email-form>
