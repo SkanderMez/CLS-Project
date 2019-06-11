@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FieldsService} from '../services/fields.service';
+import {FieldModel} from '../components/_models/field.model';
 
 @Component({
   selector: 'app-fields',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FieldsComponent implements OnInit {
 
-  constructor() { }
+  fields: FieldModel[];
+  constructor(private fieldsService: FieldsService) { }
 
   ngOnInit() {
+    this.fieldsService.getFields()
+      .then(fields => {
+        this.fields = fields;
+      });
+
   }
 
 }
