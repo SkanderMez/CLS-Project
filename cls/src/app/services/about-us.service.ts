@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import {AboutusModel} from '../components/_models/aboutus.model';
 
+// @ts-ignore
+// tslint:disable-next-line:import-spacing
 import  file from '../../assets/about_us.json' ;
 
 @Injectable({
