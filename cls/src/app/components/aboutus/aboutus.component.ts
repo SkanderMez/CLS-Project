@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {AboutUsService} from '../../services/about-us.service';
 import {AboutusModel} from '../_models/aboutus.model';
+import {FieldsService} from '../../services/fields.service';
+import {FieldModel} from '../_models/field.model';
 
 @Component({
   selector: 'app-aboutus',
@@ -90,13 +92,19 @@ export class AboutusComponent implements OnInit {
 */
 
 aboutus: AboutusModel ;
-  constructor(private aboutUsService: AboutUsService) {
+fields: FieldModel[];
+  constructor(private aboutUsService: AboutUsService, private fieldsService: FieldsService) {
   }
 
   ngOnInit() {
     this.aboutUsService.getAboutus()
       .then(aboutus => {
         this.aboutus = aboutus;
+      });
+
+    this.fieldsService.getFields()
+      .then(fields =>{
+        this.fields=fields;
       });
   }
 
