@@ -2,19 +2,20 @@
         <div class="footer bg-dark-lighter">
             <div class="container">
                 <div class="row col-spacing-40">
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <h3>Mono</h3>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <h6 class="heading-uppercase">Useful Links</h6>
                         <ul class="list-dash">
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Prices</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a routerLink="home">Home</a></li>
+                            <li><a routerLink="about-us">About us</a></li>
+                            <li><a routerLink="contact-us">Contact us</a></li>
+                            <li *ngIf="false"><a routerLink="/about-us">About us</a></li>
+
                         </ul>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3" *ngIf="false">
                         <h6 class="heading-uppercase">Additional Links</h6>
                         <ul class="list-dash">
                             <li><a href="#">Services</a></li>
@@ -23,7 +24,7 @@
                             <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <h6 class="heading-uppercase">Contact Info</h6>
                         <ul class="list-unstyled">
                             <li>121 King St, Melbourne VIC 3000</li>
