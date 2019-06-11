@@ -6,6 +6,7 @@ import {AboutusComponent} from './components/aboutus/aboutus.component';
 import {ErrorComponent} from './components/error/error.component';
 
 export const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'contact-us', component: ContactusComponent },
   { path: 'about-us', component: AboutusComponent },

@@ -1,4 +1,4 @@
-    <nav class="navbar navbar-absolute navbar-fixed" *ngIf="nav.visible" style="color: #141414;">
+    <nav *ngIf="nav.visible" class="navbar " >
       <div class="container">
         <a class="navbar-brand" routerLink="home" >
           <h5>CLS</h5>
@@ -23,9 +23,7 @@
           </li>
         </ul><!-- end nav -->
         <ul class="list-horizontal-unstyled position-center position-lg-right">
-          <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-          <li><a href="#"><i class="fas fa-heart"></i></a></li>
-          <li><a class="search-toggle" href="#"><i class="fas fa-search"></i></a></li>
+          <li><a class="search-toggle" routerLink="#"><i class="fas fa-search"></i></a></li>
         </ul>
         <!-- Nav Toggle button -->
         <button class="nav-toggle-btn">

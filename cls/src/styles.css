@@ -4674,7 +4674,8 @@ ol.list-ordered-style-5 li::before {
 }
 
 .navbar-absolute .navbar-brand, .navbar-absolute h1, .navbar-absolute h2, .navbar-absolute h3, .navbar-absolute h4, .navbar-absolute h5, .navbar-absolute h6 {
-	color: #141414
+	color: #141414;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .navbar-absolute .nav-toggle-btn .lines, .navbar-absolute .nav-toggle-btn .lines:after, .navbar-absolute .nav-toggle-btn .lines:before {
