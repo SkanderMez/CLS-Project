@@ -1,0 +1,19 @@
+{
+  "fields": [
+    {
+      "title": "IT Consulting",
+      "description": "def",
+      "icon": "ti-comment-alt"
+    },
+    {
+      "title": "Software Development",
+      "description": "def",
+      "icon": "fas fa-project-diagram"
+    },
+    {
+      "title": "System Development",
+      "description": "deaaaf",
+      "icon": "fas fa-hdd"
+    }
+  ]
+}
