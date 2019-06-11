@@ -11,7 +11,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-10 col-md-8 col-lg-7">
-          <div class="bg-black-07 padding-50 newClass">
+          <div class="bg-black-07 padding-50 slogan">
             <h2 class="font-weight-light no-margin">Great things in business are never done by one person. They're done by a team of people.</h2>
           </div>
         </div>
@@ -23,28 +23,7 @@
 
 <!-- Services section -->
 <div class="section bg-grey-lightest">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-4 icon-5xl">
-        <i class="ti-comment-alt text-dark"></i>
-        <h5 class="font-weight-normal margin-top-20">Business Consultent</h5>
-        <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-        <a class="text-btn-3 margin-top-20" href="#">Learn More</a>
-      </div>
-      <div class="col-12 col-md-4 icon-5xl">
-        <i class="ti-settings text-dark"></i>
-        <h5 class="font-weight-normal margin-top-20">Factory Consultent</h5>
-        <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-        <a class="text-btn-3 margin-top-20" href="#">Learn More</a>
-      </div>
-      <div class="col-12 col-md-4 icon-5xl">
-        <i class="ti-blackboard text-dark"></i>
-        <h5 class="font-weight-normal margin-top-20">Strategy &amp; Planning</h5>
-        <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-        <a class="text-btn-3 margin-top-20" href="#">Learn More</a>
-      </div>
-    </div><!-- end row -->
-  </div><!-- end container -->
+  <app-fields></app-fields>
 </div>
 <!-- end Services section -->
 
@@ -66,7 +45,7 @@
 <!-- end About section -->
 
 <!-- Clients section -->
-<div class="section bg-dark-lightest">
+<div class="section bg-dark-lightest" *ngIf="false">
   <div class="container">
     <div class="section-title text-center">
       <h2 class="font-weight-light">Our Amazing Clients</h2>
@@ -88,44 +67,27 @@
 <!-- end Clients section -->
 
 <!-- Contact section -->
-<div class="section">
+<div class="section" >
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-4">
-        <div class="margin-bottom-30">
-          <h6 class="font-weight-normal no-margin">Phone:</h6>
-          <p>+(987) 654 321 01</p>
-        </div>
-        <div class="margin-bottom-30">
-          <h6 class="font-weight-normal no-margin">Email:</h6>
-          <p>contact@email.com</p>
-        </div>
-        <div>
-          <h6 class="font-weight-normal no-margin">Address:</h6>
-          <p>121 King St, Melbourne VIC 3000</p>
-        </div>
+        <ng-container *ngIf="contact">
+          <div class="margin-bottom-30">
+            <h6 class="font-weight-normal no-margin">Phone:</h6>
+            <p>{{contact.phone}}</p>
+          </div>
+          <div class="margin-bottom-30">
+            <h6 class="font-weight-normal no-margin">Email:</h6>
+            <p>{{contact.email}}</p>
+          </div>
+          <div>
+            <h6 class="font-weight-normal no-margin">Address:</h6>
+            <p>{{contact.address1}} {{contact.address2}}</p>
+          </div>
+        </ng-container>
       </div>
       <div class="col-12 col-md-8">
-        <div class="contact-form text-right">
-          <form method="post" id="contactform">
-            <div class="form-row">
-              <div class="col-12 col-sm-6">
-                <input type="text" id="name" name="name" placeholder="Name" required>
-              </div>
-              <div class="col-12 col-sm-6">
-                <input type="email" id="email" name="email" placeholder="E-Mail" required>
-              </div>
-            </div>
-            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-            <textarea name="message" id="message" placeholder="Message"></textarea>
-            <button class="button button-lg button-outline-dark button-radius" type="submit">Send Message</button>
-          </form>
-          <!-- Submit result -->
-          <div class="submit-result">
-            <span id="success">Thank you! Your Message has been sent.</span>
-            <span id="error">Something went wrong, Please try again!</span>
-          </div>
-        </div>
+        <app-email-form></app-email-form>
       </div>
     </div><!-- end row -->
   </div><!-- end container -->

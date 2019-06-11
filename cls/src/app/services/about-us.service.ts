@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import {AboutusModel} from '../components/_models/aboutus.model';
+
 // @ts-ignore
 // tslint:disable-next-line:import-spacing
 import  file from '../../assets/about_us.json' ;
@@ -7,13 +9,15 @@ import  file from '../../assets/about_us.json' ;
   providedIn: 'root'
 })
 export class AboutUsService {
-  team: any ;
+
+
   constructor() {
-        console.log(file.team);
-        this.team = file.team ;
   }
 
-    getTeam(): any {
-        return this.team ;
-    }
+   getAboutus() : Promise<AboutusModel> {
+     return new Promise<AboutusModel>(resolve => {
+       resolve (file);
+     });
+   }
+
 }

@@ -13,6 +13,10 @@ import { NavbarService } from './services/navbar.service';
 import { FooterService } from './services/footer.service';
 import {routes} from './app-routing.module';
 import { FieldsComponent } from './fields/fields.component';
+import {AboutUsService} from './services/about-us.service';
+import {FieldsService} from './services/fields.service';
+import { EmailFormComponent } from './components/email-form/email-form.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -24,13 +28,16 @@ import { FieldsComponent } from './fields/fields.component';
     ContactusComponent,
     AboutusComponent,
     ErrorComponent,
-    FieldsComponent
+    FieldsComponent,
+    EmailFormComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [NavbarService, FooterService    ],
+  providers: [NavbarService, FooterService, AboutUsService , FieldsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

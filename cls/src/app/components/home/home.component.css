@@ -3,10 +3,8 @@
   background-size: cover !important;
 }
 
-.newClass{
-background-color: #4b5e6cb8 !important;
-position: relative;
-border-radius: 100px 0 100px 0;
-right: 211px;
+.slogan{
+  background-color: #4b5e6cb8 !important;
+  border-radius: 100px 0 100px 0;
 }
 
