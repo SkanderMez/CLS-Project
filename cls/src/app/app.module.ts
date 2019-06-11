@@ -13,6 +13,8 @@ import { NavbarService } from './services/navbar.service';
 import { FooterService } from './services/footer.service';
 import {routes} from './app-routing.module';
 import { FieldsComponent } from './fields/fields.component';
+import {AboutUsService} from './services/about-us.service';
+import {FieldsService} from './services/fields.service';
 
 
 @NgModule({
@@ -30,7 +32,7 @@ import { FieldsComponent } from './fields/fields.component';
     BrowserModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [NavbarService, FooterService    ],
+  providers: [NavbarService, FooterService, AboutUsService , FieldsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
