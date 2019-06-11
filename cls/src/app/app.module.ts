@@ -12,6 +12,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { NavbarService } from './services/navbar.service';
 import { FooterService } from './services/footer.service';
 import {routes} from './app-routing.module';
+import { FieldsComponent } from './fields/fields.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {routes} from './app-routing.module';
     NavbarComponent,
     ContactusComponent,
     AboutusComponent,
-    ErrorComponent
+    ErrorComponent,
+    FieldsComponent
   ],
   imports: [
     BrowserModule,
