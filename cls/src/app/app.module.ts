@@ -17,6 +17,7 @@ import {AboutUsService} from './services/about-us.service';
 import {FieldsService} from './services/fields.service';
 import { EmailFormComponent } from './components/email-form/email-form.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     BrowserModule,
     RouterModule.forRoot(routes),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [NavbarService, FooterService, AboutUsService , FieldsService],
   bootstrap: [AppComponent]
