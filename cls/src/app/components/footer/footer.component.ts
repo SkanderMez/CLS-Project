@@ -1,5 +1,7 @@
 import { FooterService } from '../../services/footer.service';
 import { Component, OnInit } from '@angular/core';
+import {ContactService} from '../../services/contact.service';
+import {ContactModel} from '../_models/contact.model';
 
 @Component({
   selector: 'app-footer',
@@ -8,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(public footer: FooterService) { }
+  contact: ContactModel;
+  constructor(public footer: FooterService, private contactService: ContactService) { }
 
   ngOnInit() {
+    this.contactService.getContact()
+      .then(contact => {
+        this.contact = contact;
+      });
   }
 
 }

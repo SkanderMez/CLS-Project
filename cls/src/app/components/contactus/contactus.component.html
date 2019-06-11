@@ -21,25 +21,25 @@
 <div class="section">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-sm-6 col-md-3 icon-3xl">
+      <div class="col-12 col-sm-6 col-md-4 icon-3xl">
         <i class="ti ti-email text-dark margin-bottom-20"></i>
         <h6 class="heading-uppercase no-margin">Email</h6>
-        <p>contact@email.com</p>
+        <p>{{contact.email}}</p>
       </div>
-      <div class="col-12 col-sm-6 col-md-3 icon-3xl">
+      <div class="col-12 col-sm-6 col-md-4 icon-3xl">
         <i class="ti ti-mobile text-dark margin-bottom-20"></i>
         <h6 class="heading-uppercase no-margin">Phone</h6>
-        <p>+(987) 654 321 01</p>
+        <p>{{contact.phone}}</p>
       </div>
-      <div class="col-12 col-sm-6 col-md-3 icon-3xl">
+      <div class="col-12 col-sm-6 col-md-3 icon-3xl" *ngIf="false">
         <i class="ti ti-skype text-dark margin-bottom-20"></i>
         <h6 class="heading-uppercase no-margin">Skype</h6>
         <p>contact.skype</p>
       </div>
-      <div class="col-12 col-sm-6 col-md-3 icon-3xl">
+      <div class="col-12 col-sm-6 col-md-4 icon-3xl">
         <i class="ti ti-location-pin text-dark margin-bottom-20"></i>
         <h6 class="heading-uppercase no-margin">Address</h6>
-        <p>121 King St, Melbourne VIC 3000</p>
+        <p>{{contact.address1}} {{contact.address2}}</p>
       </div>
     </div><!-- end row -->
   </div><!-- end container -->
