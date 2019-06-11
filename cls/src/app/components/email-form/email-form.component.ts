@@ -27,7 +27,11 @@ export class EmailFormComponent implements OnInit {
   submitMail() {
     console.log(this.emailForm.value);
     this.hhtp.post('https://script.google.com/macros/s/AKfycbxgaDQF1kJh5hDOIJhbdqgkN26fiBjdyxT3Z314/exec', this.emailForm.value)
-      .subscribe(d => console.log(d));
+      .subscribe(() => {
+        document.getElementById('success').classList.add('show-result');
+      }, () => {
+        document.getElementById('error').classList.add('show-result');
+      });
   }
 
 }
