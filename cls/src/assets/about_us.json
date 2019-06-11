@@ -2,61 +2,61 @@
 "team" : [
 
       {
-        "nom" : 'Ridha Gharbi',
-        "Poste" : 'BOSS',
-        "URL" : '4.jpg',
-        "fb" : 'https://web.facebook.com/ridha.gharbi.353' ,
-        "twitter" : '#',
-        'linkedin' : '#'
+        "nom" : "Ridha Gharbi",
+        "Poste" : "BOSS",
+        "URL" : "4.jpg",
+        "fb" : "https://web.facebook.com/ridha.gharbi.353" ,
+        "twitter" : "#",
+        "linkedin" : "#"
       },
       {
-        "nom" : 'Hamza Daoues',
-        "Poste" : 'developer',
-        "URL" : '1.jpg',
-        "fb" : 'https://web.facebook.com/hdaoues' ,
-        "twitter" : '#',
-        'linkedin' : '#'
+        "nom" : "Hamza Daoues",
+        "Poste" : "developer",
+        "URL" : "1.jpg",
+        "fb" : "https://web.facebook.com/hdaoues" ,
+        "twitter" : "#",
+        "linkedin" : "#"
       },
       {
-        "nom" : 'Khalil Turki',
-        "Poste" : 'developer',
-        "URL" : '2.jpg',
-        "fb" : '#' ,
-        "twitter" : '#',
-        'linkedin' : '#'
+        "nom" : "Khalil Turki",
+        "Poste" : "developer",
+        "URL" : "2.jpg",
+        "fb" : "#" ,
+        "twitter" : "#",
+        "linkedin" : "#"
 
       },
       {
-        "nom" : 'Skander Mez',
-        "Poste" : 'developer',
-        "URL" : '3.jpg',
-        "fb" : '#' ,
-        "twitter" : '#',
-        'linkedin' : '#'
+        "nom" : "Skander Mez",
+        "Poste" : "developer",
+        "URL" : "3.jpg",
+        "fb" : "#" ,
+        "twitter" : "#",
+        "linkedin" : "#"
       },
       {
-        "nom" : 'Omar Kammoun',
-        "Poste" : 'developer',
-        "URL" : '5.jpg',
-        "fb" : 'https://web.facebook.com/Omar.Nz.Kamoun' ,
-        "twitter" : '#',
-        'linkedin' : '#'
+        "nom" : "Omar Kammoun",
+        "Poste" : "developer",
+        "URL" : "5.jpg",
+        "fb" : "https://web.facebook.com/Omar.Nz.Kamoun" ,
+        "twitter" : "#",
+        "linkedin" : "#"
       },
       {
-        "nom" : 'Mazen Hamdi',
-        "Poste" : 'developer',
-        "URL" : '6.jpg',
-        "fb" : 'https://web.facebook.com/profile.php?id=1672831203&ref=br_rs' ,
-        "twitter" : '#',
-        'linkedin' : '#'
+        "nom" : "Mazen Hamdi",
+        "Poste" : "developer",
+        "URL" : "6.jpg",
+        "fb" : "https://web.facebook.com/profile.php?id=1672831203&ref=br_rs" ,
+        "twitter" : "#",
+        "linkedin" : "#"
       },
       {
-        "nom" : 'Slim Sellami',
-        "Poste" : 'developer',
-        "URL" : '7.jpg',
-        "fb" : 'https://web.facebook.com/slim.sellami.3' ,
-        "twitter" : '#',
-        'linkedin' : '#'
+        "nom" : "Slim Sellami",
+        "Poste" : "developer",
+        "URL" : "7.jpg",
+        "fb" : "https://web.facebook.com/slim.sellami.3" ,
+        "twitter" : "#",
+        "linkedin" : "#"
       }
     ]
 }
