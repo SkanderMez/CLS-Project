@@ -1,6 +1,6 @@
-    <nav class="navbar" *ngIf="nav.visible">
+    <nav class="navbar navbar-absolute navbar-fixed" *ngIf="nav.visible" style="color: #141414;">
       <div class="container">
-        <a class="navbar-brand" href="http://mono.flatheme.net/">
+        <a class="navbar-brand" routerLink="home" >
           <h5>CLS</h5>
         </a>
         <ul class="nav">
@@ -11,7 +11,7 @@
 
           <!-- dropdown link 2 -->
           <li class="nav-item ">
-            <a class="nav-link" routerLink="our-team">Out Team</a>
+            <a class="nav-link" routerLink="our-team">Our projects</a>
           </li>
           <!-- dropdown link 3 -->
           <li class="nav-item ">
@@ -20,18 +20,6 @@
           <!-- dropdown link 4 -->
           <li class="nav-item ">
             <a class="nav-link" routerLink="contact-us">Contact Us</a>
-          </li>
-          <!-- dropdown link 5 -->
-          <li class="nav-item ">
-            <a class="nav-link" routerLink="shop">Shop</a>
-          </li>
-          <!-- dropdown link 6 -->
-          <li class="nav-item ">
-            <a class="nav-link" routerLink="Features">Features</a>
-          </li>
-          <!-- Mega Dropdown Menu -->
-          <li class="nav-item ">
-            <a class="nav-link" routerLink="elements">Elements</a>
           </li>
         </ul><!-- end nav -->
         <ul class="list-horizontal-unstyled position-center position-lg-right">

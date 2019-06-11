@@ -7,7 +7,7 @@ import  file from '../../assets/about_us.json' ;
 export class AboutUsService {
   team: any ;
   constructor() {
-        console.log(file.team);
+     ///   console.log(file.team);
         this.team = file.team ;
   }
 

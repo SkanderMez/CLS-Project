@@ -4674,7 +4674,7 @@ ol.list-ordered-style-5 li::before {
 }
 
 .navbar-absolute .navbar-brand, .navbar-absolute h1, .navbar-absolute h2, .navbar-absolute h3, .navbar-absolute h4, .navbar-absolute h5, .navbar-absolute h6 {
-	color: #fff
+	color: #141414
 }
 
 .navbar-absolute .nav-toggle-btn .lines, .navbar-absolute .nav-toggle-btn .lines:after, .navbar-absolute .nav-toggle-btn .lines:before {
@@ -4695,7 +4695,7 @@ ol.list-ordered-style-5 li::before {
 
 @media (min-width:992px) {
 	.navbar-absolute .nav .nav-item .nav-link {
-		color: #fff
+		color: #141414
 	}
 	.navbar-absolute .nav .nav-item .nav-link.active, .navbar-absolute .nav .nav-item .nav-link:hover {
 		color: rgba(255, 255, 255, .7)
