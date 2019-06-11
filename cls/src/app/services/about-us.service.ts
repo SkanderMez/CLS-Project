@@ -3,7 +3,7 @@ import {AboutusModel} from '../components/_models/aboutus.model';
 
 // @ts-ignore
 // tslint:disable-next-line:import-spacing
-import  file from '../../assets/about_us.json' ;
+import  file from '../../assets/json/about_us.json' ;
 
 @Injectable({
   providedIn: 'root'
