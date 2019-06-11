@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AboutUsService} from '../../services/about-us.service';
+import {AboutusModel} from '../_models/aboutus.model';
 
 @Component({
   selector: 'app-aboutus',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutusComponent implements OnInit {
 
-  team =
+/* team =
     [
       {
         "nom" : 'Ridha Gharbi',
@@ -85,10 +87,17 @@ export class AboutusComponent implements OnInit {
       }
     ];
 
+*/
 
-  constructor() { }
+aboutus: AboutusModel ;
+  constructor(private aboutUsService: AboutUsService) {
+  }
 
   ngOnInit() {
+    this.aboutUsService.getAboutus()
+      .then(aboutus => {
+        this.aboutus = aboutus;
+      });
   }
 
 }

@@ -10,6 +10,14 @@
         "linkedin" : "#"
       },
       {
+        "nom" : "Neyla Karoui",
+        "Poste" : "Consultant",
+        "URL" : "9.jpg",
+        "fb" : "https://web.facebook.com/profile.php?id=100011098754342" ,
+        "twitter" : "#",
+        "linkedin" : "https://tn.linkedin.com/in/maher-dous-943b0a48"
+      },
+      {
         "nom" : "Hamza Daoues",
         "Poste" : "developer",
         "URL" : "1.jpg",
@@ -58,5 +66,8 @@
         "twitter" : "#",
         "linkedin" : "#"
       }
-    ]
+    ],
+"team_description" : "hedha bech tmedhouli neyla",
+"about_CLS_1" : "mazzeel hedha",
+"about_CLS_2" : "w hedha mazzel zeda"
 }
