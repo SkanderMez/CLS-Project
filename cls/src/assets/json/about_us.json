@@ -60,14 +60,22 @@
       },
       {
         "nom" : "Slim Sellami",
-        "Poste" : "developer",
+        "Poste" : "IT manager and external communication",
         "URL" : "7.jpg",
         "fb" : "https://web.facebook.com/slim.sellami.3" ,
         "twitter" : "#",
         "linkedin" : "#"
+      },
+      {
+        "nom" : "Maher Dous",
+        "Poste" : "Consultant",
+        "URL" : "8.jpg",
+        "fb" : "https://web.facebook.com/dous.maher" ,
+        "twitter" : "#",
+        "linkedin" : "https://tn.linkedin.com/in/maher-dous-943b0a48"
       }
     ],
-"team_description" : "hedha bech tmedhouli neyla",
+"team_description" : "Great things in business are never done by one person. They're done by a team of people.",
 "about_CLS_1" : "mazzeel hedha",
 "about_CLS_2" : "w hedha mazzel zeda"
 }
