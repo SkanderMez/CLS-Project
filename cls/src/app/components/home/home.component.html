@@ -12,7 +12,9 @@
       <div class="row">
         <div class="col-12 col-sm-10 col-md-8 col-lg-7">
           <div class="bg-black-07 padding-50 slogan">
-            <h2 class="font-weight-light no-margin">Great things in business are never done by one person. They're done by a team of people.</h2>
+            <ng-container *ngIf="aboutUs">
+              <h2 class="font-weight-light no-margin">{{aboutUs.about_CLS_1}}</h2>
+            </ng-container>
           </div>
         </div>
       </div><!-- end row -->
@@ -35,9 +37,11 @@
         <img src="../assets/images/business-consulting-about.jpg" alt="">
       </div>
       <div class="col-12 col-lg-6">
-        <h2 class="font-weight-light">We Are Mono</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        <a class="button button-lg button-radius button-reveal-left-outline-dark margin-top-30" href="#"><i class="ti-arrow-right"></i><span>More About Us</span></a>
+        <ng-container *ngIf="aboutUs">
+          <h2 class="font-weight-light">We Are CLS</h2>
+          <p>{{aboutUs.about_CLS_2}}</p>
+        </ng-container>
+        <a class="button button-lg button-radius button-reveal-left-outline-dark margin-top-30" routerLink="about-us"><i class="ti-arrow-right"></i><span>More About Us</span></a>
       </div>
     </div><!-- end row -->
   </div><!-- end container -->
@@ -45,22 +49,20 @@
 <!-- end About section -->
 
 <!-- Clients section -->
-<div class="section bg-dark-lightest" *ngIf="false">
+<div class="section bg-dark-lightest" *ngIf="true">
   <div class="container">
     <div class="section-title text-center">
       <h2 class="font-weight-light">Our Amazing Clients</h2>
     </div>
-    <ul class="clients-grid column-5">
-      <li><a href="#"><img src="../assets/images/client-1-white.png" alt=""></a></li>
-      <li><a href="#"><img src="../assets/images/client-2-white.png" alt=""></a></li>
-      <li><a href="#"><img src="../assets/images/client-3-white.png" alt=""></a></li>
-      <li><a href="#"><img src="../assets/images/client-4-white.png" alt=""></a></li>
-      <li><a href="#"><img src="../assets/images/client-5-white.png" alt=""></a></li>
-      <li><a href="#"><img src="../assets/images/client-6-white.png" alt=""></a></li>
-      <li><a href="#"><img src="../assets/images/client-7-white.png" alt=""></a></li>
-      <li><a href="#"><img src="../assets/images/client-1-white.png" alt=""></a></li>
-      <li><a href="#"><img src="../assets/images/client-2-white.png" alt=""></a></li>
-      <li><a href="#"><img src="../assets/images/client-3-white.png" alt=""></a></li>
+    <ul class="clients-grid">
+      <ng-container *ngIf="clients"></ng-container>
+      <li class="client-logo" *ngFor="let client of clients">
+        <a href="{{client.externalUrl}}">
+          <img src="{{client.imageUrl}}" [ngClass]="{'dark':client.dark}" alt="">
+        </a>
+      </li>
+
+
     </ul>
   </div><!-- end container -->
 </div>
