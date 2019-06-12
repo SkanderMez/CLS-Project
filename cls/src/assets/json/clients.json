@@ -1,0 +1,18 @@
+{
+  "clients" : [
+
+    {
+      "imageUrl": "../assets/images/clients/accon-rvs.png",
+      "externalUrl": "#"
+    },
+    {
+      "imageUrl": "../assets/images/clients/ilume-logo.svg",
+      "externalUrl": "#"
+    },
+    {
+      "imageUrl": "../assets/images/clients/LoginLogo.png",
+      "externalUrl": "#",
+      "dark": "true"
+    }
+  ]
+}
