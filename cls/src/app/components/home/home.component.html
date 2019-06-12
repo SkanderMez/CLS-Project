@@ -57,7 +57,7 @@
     <ul class="clients-grid">
       <ng-container *ngIf="clients"></ng-container>
       <li class="client-logo" *ngFor="let client of clients">
-        <a href="{{client.externalUrl}}">
+        <a href="{{client.externalUrl}}" target="_blank">
           <img src="{{client.imageUrl}}" [ngClass]="{'dark':client.dark}" alt="">
         </a>
       </li>
